@@ -1,10 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html' %}
+{% block body %}
+<div class="hero-image">
+
+    <div class="fake-hero">
+
+        <img src="../../static/img/group.png">
+
+        <div class="hero-h1">
+
+            <h1>URL Shortener</h1>
+
+
+        </div>
+        <div class="hero-h5">
+
+
+            <h5>Make your links more acceptable, track them and manage them</h5>
+        </div>
+
+        <div class="url-link">
+            <input type="text" name="URL" id="inputUrl" value="" placeholder="Paste your link here">
+
+            <button id="button">Shorten</button>
+
+
+        </div>
+
+
+    <div>
+{#        {% if urls %}#}
+{#        {% for u in urls %}#}
+{#        <div>#}
+{#            <a style="color: white" target="_blank" href="{{ u.url }}">{{ u.short_url }}</a>#}
+{#        </div>#}
+{#        {% end %}#}
+{#        {% end %}#}
+
+    </div>
+    </div>
+
+
+</div>
+{% end %}

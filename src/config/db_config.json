@@ -1,0 +1,13 @@
+[
+    {
+        "db_host": "localhost",
+        "db_name": "minify",
+        "db_password": "minify",
+        "db_port": "5432",
+        "db_type": "postgresql",
+        "db_user": "minify",
+        "svc_ports": [
+            8802
+        ]
+    }
+]

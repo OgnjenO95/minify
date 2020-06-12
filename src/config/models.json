@@ -1,0 +1,7 @@
+[
+    "src.models.mail",
+    "src.models.sequencers",
+    "src.models.session",
+    "src.models.user",
+    "src.models.utils"
+]

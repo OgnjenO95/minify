@@ -1,3 +1,2 @@
-$!/bin/sh
-
-PYHONPATH=. ./.venv/bin/activate ./bin/minify.py $@
+#!/bin/sh
+PYTHONPATH=. ./.venv/bin/python bin/minify.py $@
