@@ -20,7 +20,7 @@ function shorten() {
         }).done(function (res) {
             console.log(custom);
 
-            document.getElementById('inputUrl').value = 'http://www.ognjen.digitalcube.rs/'+ custom
+            document.getElementById('inputUrl').value = 'ognjen.digitalcube.rs/'+ custom
         }).fail(function (err) {
             console.log('Error: ', err.responseText);
         })
