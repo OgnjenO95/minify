@@ -18,29 +18,31 @@ body {
   font-family: Nunto;
   src: url(../../static/font/nunito.ttf);
 }
+.text {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Nunito;
+    top: 27%;
+}
 
 .hero-h1 {
-  text-align: center;
-  position: absolute;
-  top: 23%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-family: Nunito;
+    top: 23%;
+    color: white;
 }
 
 .hero-h5 {
-  text-align: center;
-  position: absolute;
-  top: 27%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: rgba(255, 255, 255, 0.85);
-  font-family: Nunito;
-
-
-
+    top: 27%;
+    color: rgba(255, 255, 255, 0.85);
 }
+
+.hero-h2 {
+    top: 30%;
+    color: #a50202;
+    visibility: hidden;
+}
+
 
 .fake-hero {
   background-color: rgba(14, 25, 41, 0.8);
@@ -101,8 +103,6 @@ body {
 	}
 
 
-
-
 @media screen and (max-width: 2560px) {
     button {
         width: 10%;
@@ -135,10 +135,16 @@ body {
     .hero-h1 {
         top:20%;
     }
+        .texts{
+        top: 22%;
+    }
 }
 
 @media screen and (max-width: 320px) {
     button {
         width: 40%;
+    }
+    .texts{
+        top: 20%;
     }
 }

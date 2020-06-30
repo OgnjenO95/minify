@@ -1,5 +1,6 @@
 function shorten() {
     let inputURL = document.getElementById('inputUrl').value;
+    document.getElementById('error').style.visibility = 'hidden'
 
     const _data = {
         'url': inputURL
@@ -19,22 +20,27 @@ function shorten() {
         }).done(function (res) {
             console.log(custom);
 
-            document.getElementById('inputUrl').value = 'http://www.minify.rs/'+ custom
+            document.getElementById('inputUrl').value = 'http://www.ognjen.digitalcube.rs/'+ custom
         }).fail(function (err) {
-            console.log('Error: ', err);
+            console.log('Error: ', err.responseText);
         })
 
     }).fail(function (err) {
-        console.log('Error: ', err);
+        let error = JSON.parse(err.responseText);
+        console.log('Error: ', error.message);
+        document.getElementById('error').style.visibility = 'visible'
     })
 
 }
-
 
 const btn = document.getElementById('button');
 btn.addEventListener('click', shorten);
 
 
-
-
-
+let inputUrl = document.getElementById("inputUrl");
+inputUrl.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("button").click();
+  }
+})
